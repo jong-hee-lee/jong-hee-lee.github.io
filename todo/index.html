@@ -1,1 +1,68 @@
-시계
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <link rel="stylesheet" href="./todo.css">
+
+    <title>Hello, My TODO!</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <form name="myForm" id="myForm">
+            <input type="text" name="userName" placeholder="type your name" /> <input type="submit" value="confirm" />
+        </form>
+        <h1 id="greeting"></h1>
+
+        <div class="grid">
+
+            <div>
+                <article>
+                    <form id="todoForm">
+                        <input type="text" name="todoItem" placeholder="add todo list" /> <input type="submit"
+                            value="ADD" />
+                    </form>
+                    <table role="grid">
+                        <thead>
+                            <tr>
+                                <th>TODO LIST</th>
+                                <th>DELETE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="todoBody"></tbody>
+                    </table>
+                </article>
+            </div>
+
+            <div>
+                <article>
+                    현재 시간
+                    <h2 id="myClock"></h2>
+
+                    오늘의 날씨
+
+                    <div id="weather">
+                        <h2></h2>
+                        <h2></h2>
+                    </div>
+                    <div id="progress">
+                        날씨 확인중 !
+                        <progress></progress>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+
+
+    </main>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
