@@ -22,7 +22,7 @@ function handleSubmit(event) {
 
 function showDateAndTime(){
     const myDate = new Date();
-    myClock.innerText = `${myDate.getMonth() +1}월 ${myDate.getDay()}일 ${myDate.getHours()}시 ${myDate.getMinutes()}분 ${myDate.getSeconds()}초`;
+    myClock.innerText = `${myDate.getMonth() +1}월 ${myDate.getDate()}일 ${myDate.getHours()}시 ${myDate.getMinutes()}분 ${myDate.getSeconds()}초`;
 }
 
 function showGreeting() {
